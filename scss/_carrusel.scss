@@ -1,0 +1,17 @@
+/* carrusel de imagenes */
+.container {
+    margin-top: 10px;
+
+    &carousel-item img {
+        width: auto;
+        height: 500px;
+}
+}
+
+@media (max-width: 640px) {
+    .container {
+        display: none;
+    }
+
+}
+
