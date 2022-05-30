@@ -1,0 +1,75 @@
+/* Footer - Pie de pagina */
+footer {
+    grid-area: pie;
+    
+}
+
+
+footer{
+    flex-grow: 2;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 100px;
+    margin: 100px;
+    
+    
+}
+
+footer a {
+    display: block;
+    background-color: rgb(183, 85, 93);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+    color: rgb(37, 32, 32);
+    padding: 10px;
+    border: solid 1px;
+    margin-top: 30px;
+
+}
+
+
+.sociales-redes {
+    min-width: 700px;
+    display: flex;
+    display: inline;
+    justify-content: center;
+    margin-top: 40px;
+    
+
+}
+
+.sociales-redes a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(70, 70, 67);
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5 );
+    
+}
+@media (min-width: 768px) {
+    .sociales-redes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+}
+
+@media (max-width: 369px) {
+    .sociales-redes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+}

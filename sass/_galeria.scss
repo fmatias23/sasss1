@@ -1,0 +1,35 @@
+/* Galeria de fotos */
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10px;
+    gap: 5px;
+    justify-items: stretch;
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    .fotos {
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+}
+
+.fotos img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.fotos img {
+    transition: filter .5s
+}
+
+.fotos img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}

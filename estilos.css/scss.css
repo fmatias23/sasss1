@@ -1,0 +1,186 @@
+/* menu de navegacion */
+/* line 2, ../../../OneDrive/Escritorio/ame - copia/sass/_menu.scss */
+.navbar {
+  background-color: rgba(236, 215, 215, 0.916);
+}
+
+/* line 6, ../../../OneDrive/Escritorio/ame - copia/sass/_menu.scss */
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Staatliches', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* carrusel de imagenes */
+/* line 2, ../../../OneDrive/Escritorio/ame - copia/sass/_carrusel.scss */
+.container {
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  /* line 8, ../../../OneDrive/Escritorio/ame - copia/sass/_carrusel.scss */
+  .container {
+    display: none;
+  }
+}
+
+/* line 14, ../../../OneDrive/Escritorio/ame - copia/sass/_carrusel.scss */
+.carousel-item img {
+  width: auto;
+  height: 500px;
+}
+
+/* contenido principal - main */
+/* line 2, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+.contenido-principal {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 50px 150px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* line 11, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+  .contenido-principal {
+    display: flex;
+  }
+}
+
+@media (max-width: 392px) {
+  /* line 18, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+  .parrafo {
+    display: none;
+  }
+}
+
+/* line 25, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+main {
+  grid-area: principal;
+  padding: 10px;
+  margin: 100px;
+}
+
+/* line 32, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+main form ul li {
+  list-style: none;
+}
+
+/* line 37, ../../../OneDrive/Escritorio/ame - copia/sass/_contprincipal.scss */
+.foto-redonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+}
+
+/* Galeria de fotos */
+/* line 2, ../../../OneDrive/Escritorio/ame - copia/sass/_galeria.scss */
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  padding: 10px;
+  gap: 5px;
+  justify-items: stretch;
+}
+
+@media (max-width: 768px) {
+  /* line 15, ../../../OneDrive/Escritorio/ame - copia/sass/_galeria.scss */
+  .fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* line 22, ../../../OneDrive/Escritorio/ame - copia/sass/_galeria.scss */
+.fotos img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 30px;
+}
+
+/* line 28, ../../../OneDrive/Escritorio/ame - copia/sass/_galeria.scss */
+.fotos img {
+  transition: filter .5s;
+}
+
+/* line 32, ../../../OneDrive/Escritorio/ame - copia/sass/_galeria.scss */
+.fotos img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+/* Footer - Pie de pagina */
+/* line 2, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+footer {
+  grid-area: pie;
+}
+
+/* line 8, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+footer {
+  flex-grow: 2;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 100px;
+  margin: 100px;
+}
+
+/* line 21, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+footer a {
+  display: block;
+  background-color: #b7555d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #252020;
+  padding: 10px;
+  border: solid 1px;
+  margin-top: 30px;
+}
+
+/* line 37, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+.sociales-redes {
+  min-width: 700px;
+  display: flex;
+  display: inline;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* line 47, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+.sociales-redes a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 28px;
+  width: 50px;
+  text-align: center;
+  background-color: #464643;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  /* line 60, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+  .sociales-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 369px) {
+  /* line 69, ../../../OneDrive/Escritorio/ame - copia/sass/_pieDePagina.scss */
+  .sociales-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=scss.css.map */
